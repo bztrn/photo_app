@@ -1,6 +1,6 @@
 <%= form_for @image, :html => { multipart: true, :class => "form-horizontal image" } do |f| %>
 
-    <% if @image.errors.any? %>
+  <% if @image.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
       <div class="panel-heading">
         <h3 class="panel-title"><%= pluralize(@image.errors.count, "error") %> prohibited this image from being saved:</h3>
@@ -29,7 +29,9 @@
     </div>
     <%= error_span(@image[:picture]) %>
   </div>
-
+  
+  <p></p>
+  
   <%= f.submit nil, :class => 'btn btn-primary' %>
   <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
             images_path, :class => 'btn btn-default' %>

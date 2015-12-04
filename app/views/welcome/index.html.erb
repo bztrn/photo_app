@@ -23,7 +23,7 @@
             </ul>
           </div>
           <p>
-          <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
+          <%= link_to 'Sign Up', new_user_registration_path(plan_type: 'Premium'), class: 'btn btn-primary sign-up' %>
           </p>
       </div>  <!-- end col-lg-3 -->
       
@@ -41,7 +41,7 @@
           </ul>
         </div>
         <p>
-        <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
+        <%= link_to 'Sign Up', new_user_registration_path(plan_type: 'Amaze'), class: 'btn btn-primary sign-up' %>
         </p>
       </div>
     </div>
